@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<online_shop_catalog>
+    <product>
+        <id>1</id>
+        <name>AUDI A8</name>
+        <category>CARS</category>
+        <price>1200.00</price>
+        <description>A high-performance cars with advanced features.</description>
+    </product>
+</online_shop_catalog>

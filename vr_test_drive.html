@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Test Drive</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 0.5rem;
+        }
+        input, select, button {
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VR Test Drive Booking</h1>
+    </header>
+    
+    <main>
+        <h2>Book Your VR Test Drive</h2>
+        <p>Enjoy test drive experience with our technology VR.</p>
+        <form action="submit_vip_test_drive.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Your email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Your phone number">
+
+            <label for="car">Select Car Model:</label>
+            <select id="car" name="car" required>
+                <option value="vip_car1">VIP Car Model 1</option>
+                <option value="vip_car2">VIP Car Model 2</option>
+                <option value="vip_car3">VIP Car Model 3</option>
+            </select>
+
+            <label for="date">Preferred Test Drive Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time Slot:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="additional_requests">Additional Requests or Notes:</label>
+            <textarea id="additional_requests" name="additional_requests" rows="4" placeholder="Any special requests for your VIP experience?"></textarea>
+
+            <button type="submit">Submit VR Test Drive Request</button>
+        </form>
+    </main>
+</body>
+</html>
+
+
